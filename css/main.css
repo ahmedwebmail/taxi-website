@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Lato";
+}
+
+ul li{
+    list-style: none;
+}
+
+.uk-h3, h3 {
+    font-size: 0px;
+    line-height: 0px;
+}
+
+/* Header design */
+header{
+    background: url("../image/banner.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 740px;
+    z-index: 1;
+}
+
+header::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-color: #0f0f0f;
+    opacity: 23%;
+}
+
+.header-wrapper{
+    padding-top: 40px;
+}
+
+.navbar-nav .nav-item{
+    padding-right: 24px;
+}
+
+.navbar-nav .nav-item:nth-child(6){
+    padding-right: 0;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 17px;
+    background-color: transparent;
+    padding: 5px 20px 5px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.navbar-dark .navbar-nav .nav-link.active{
+    color: #0f0f0f;
+    background-color: #ffc61a;
+    padding: 5px 20px 5px 20px;
+    border-radius: 25px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    color: #0f0f0f;
+    background-color: #ffc61a;
+    transition: all linear 0.5s;
+}
+
+.header-txt{
+    padding-top: 86px;
+    font-weight: bold;
+}
+
+.header-txt h4{
+    font-size: 35.74px;
+    text-transform: uppercase;
+    color: #ffc61a;
+}
+
+.header-txt h1{
+    color: #ffffff;
+    font-size: 72.26px;
+}
+
+.header-txt p{
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.header-wrapper  .mt-5{
+    margin-top: -5rem !important;
+}
+/* fare booking */
+
+.fare-booking{
+    background-color: #ffc61a;
+    padding-bottom: 130px;
+}
+
+.fare-booking .pt-5{
+    padding-top: 10rem !important;
+}
+
+.booking-info{
+
+}
+
+.booking-info .booking-info-heading h3{
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.booking-info .booking-info-heading h2{
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.booking-info .booking-info-detail p{
+    text-align: justify;
+    font-size: 18px;
+    color: #101010;
+}
+
+.booking-info .booking-info-detail a button{
+    font-family: "Bebas Neue";
+    font-size: 29.53px;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.booking-form h2{
+    font-size: 34.43px;
+    color: #ffffff;
+    background-color: #171717;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    font-weight: bold;
+    margin-bottom: 0;
+    text-transform: capitalize;
+}
+
+.booking-form h2 span{
+    color: #ffc61a;
+}
+
+.booking-form form{
+    background-color: #ffffff;
+}
+
+.input-padding{
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem;
+    padding-left: 0;
+}
+
+.booking-form form input[type="text"]{
+    width: 42%;
+    display: inline-block;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 4px solid #e4e4e4;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    margin-left: 15px;
+    font-size: 20px;
+    color: #000000;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.choose-vehicle{
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 93%;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 4px solid #e4e4e4;
+    text-transform: capitalize;
+    color: #000000;
+    padding-left: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Card design */
+
+.our-tarrifs{}
+
+.our-tarrifs .card{
+    border: none;
+    background-color: #f5f4f2;
+    padding-bottom: 26px;
+}
+
+.our-tarrifs .card-img{
+    margin-top: -90px;
+}
+
+.tarrif-heading h2{
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+}
+
+.tarrif-heading h2 span{
+    color: #ffc61a;
+}
+
+.pkg-info{}
+
+.pkg-info .pkg-details{
+
+}
+
+.pkg-info .pkg-details h5{
+    font-size: 30.42px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+}
+
+.pkg-info .pkg-details p{
+    font-size: 18px;
+    font-weight: 300;
+    color: #101010;
+}
+
+.pkg-info .pkg-price p{
+    font-size: 43.94px;
+    font-weight: bold;
+    color: #ffc61a;
+}
+
+.pkg-info .pkg-price a{
+    font-family: "Bebas Neue";
+    text-decoration: none;
+    color: #000000;
+    font-size: 29.53px;
+    border: 0;
+}
+
+.pkg-info .pkg-price .btn-dark{
+    background-color: #ffc61a;
+}
+
+.our-tarrifs .card:hover{
+    background-color: #ffc61a;
+    transition: all linear 0.4s;
+}
+
+.our-tarrifs .card:hover .pkg-price p{
+    color: #101010;
+    transition: all linear 0.4s;
+}
+
+.our-tarrifs .card:hover .btn-dark{
+    background-color: #101010;
+    color: #ffffff;
+    transition: all linear 0.4s;
+}
+
+/* Middle banner  */
+
+.banner-middle{
+    background-image: url("../image/bannber-middle.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.banner-middle .banner-txt{
+
+}
+
+.banner-middle .banner-txt h5{
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #ffc61a;
+    font-weight: bold;
+}
+
+.banner-middle .banner-txt h4{
+    font-size: 43.94px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.home-pickup-logo, .ride-logo, .process-logo, .gps-logo {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: #ffc61a;
+}
+
+.option-txt h6{
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #ffc61a;
+    font-weight: bold;
+}
+
+.option-txt p{
+    font-size: 18px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.read-more .btn-dark{
+    font-family: "Bebas Neue";
+    font-size: 29.53px;
+    color: #101010;
+    text-transform: uppercase;
+    background-color: #ffc61a;
+    text-decoration: none;
+}
+
+/* download services */
+.download-service{
+
+}
+
+.download-service .download-service-header h5{
+    font-weight: bold;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #ffc61a;
+}
+
+.download-service .download-service-header h2{
+    font-weight: bold;
+    font-size: 43.94px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.download-service-details{}
+
+.download-service-details h4{
+    font-weight: bold;
+    font-size: 25.48px;
+    color: #000000;
+    text-transform: capitalize;
+}
+
+.download-service-details p{
+    font-weight: 300;
+    font-size: 18px;
+    color: #101010;
+}
+
+.mobile-img img{
+    filter: drop-shadow(15px 5px 20px #000000);
+}
+
+/* Testimonial  */
+
+.testimonial{
+    background-image: url("../image/tertimonial-banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.testimonial .testimonial-heading h4{
+    font-size: 35px;
+    color: #ffc61a;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.testimonial .testimonial-heading h3{
+    font-size: 43.94px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.testimonial-card{
+    background-color: #000000;
+    width: 100%;
+    border-radius: 10px;
+    padding-left: 55px;
+    /* clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%); */
+}
+
+.testimonial-txt p{
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.testimonial-name .testimonial-user-name h6{
+    font-size: 25px;
+    color: #ffc61a;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.testimonial-name .testimonial-user-name span{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Customer support */
+
+.customer-support{
+    background-color: #ffc61a;
+}
+
+.customer-support-txt{}
+
+.customer-support-txt p{
+    font-size: 35px;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.customer-support-txt h2{
+    font-size: 76.66px;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* footer section */
+
+footer{
+    background-image: url("../image/footer.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer .footer-txt h3{
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 25px;
+    position: relative;
+}
+
+footer .footer-txt h3::after{
+    position: absolute;
+    content: '';
+    height: 8px;
+    width: 390px;
+    background-color: #ffc61a;
+    right: 14%;
+    bottom: -40px;
+    transform: translate(10px, -1px);
+}
+
+footer .footer-txt p{
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+footer .social-media{
+    column-gap: 18px;
+}
+
+footer .social-media i{
+    font-size: 20px;
+    color: #ffc61a;
+}
+
+.user-type p{
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: #ffc61a;
+    padding-right: 30px;
+}
+
+.user-logo i{
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.location, .phone, .email, .web i{
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.address, .phone-num, .email-add, .web-add p{
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.footer-bottom{
+    background-color: #000000;
+    overflow: hidden;
+}
+
+.footer-bottom p{
+    font-weight: 400;
+    font-size: 18px;
+    color: #ffffff;
+}
